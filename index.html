@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Universitas Bandar Lampung — Green Campus E-Waste Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Mobile Sidebar Overlay -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Left Green Sidebar -->
+    <aside id="sidebar" class="sidebar">
+      <div>
+        <div class="sidebar-brand">
+          <div class="brand-logo-wrap">
+            <img src="assets/logo-ubl.png" alt="Logo Universitas Bandar Lampung" />
+          </div>
+          <div class="brand-title">Universitas Bandar Lampung</div>
+          <div class="brand-subtitle">Green Campus E-Waste</div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Menu Utama">
+          <button class="nav-item active" data-page="dashboard">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"/><path d="M9 21v-6h6v6"/></svg>
+            <span>Dashboard</span>
+          </button>
+          <button class="nav-item" data-page="lapor">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Lapor E-Waste</span>
+          </button>
+          <button class="nav-item" data-page="klasifikasi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
+            <span>Klasifikasi AI</span>
+          </button>
+          <button class="nav-item" data-page="penjemputan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span>Penjemputan</span>
+          </button>
+          <button class="nav-item" data-page="pelacakan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <span>Pelacakan</span>
+          </button>
+          <button class="nav-item" data-page="analitik">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            <span>Dashboard Analitik</span>
+          </button>
+          <button class="nav-item" data-page="pengaturan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <span>Pengaturan</span>
+          </button>
+        </nav>
+      </div>
+
+      <svg class="sidebar-leaf-bg" viewBox="0 0 200 200" fill="currentColor">
+        <path d="M30 180 C40 110, 95 60, 175 35 C155 110, 110 155, 30 180 Z" />
+        <path d="M15 140 C20 95, 55 55, 110 40 C95 85, 65 120, 15 140 Z" opacity="0.7" />
+      </svg>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-tagline">
+          <span>"Together for a Greener Campus"</span>
+          <span>🌱</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- Top Header -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Buka Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input id="global-search-input" type="text" placeholder="Cari informasi, tiket laporan, atau gedung UBL..." autocomplete="off" />
+            <div id="search-results-popover" class="search-results-popover"></div>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <button id="notif-btn" class="notif-btn" aria-label="Notifikasi">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            <span id="notif-badge" class="notif-badge">2</span>
+          </button>
+
+          <button id="profile-btn" class="profile-btn">
+            <span id="header-avatar-initials" class="profile-avatar">AP</span>
+            <span id="header-role-label">Mahasiswa</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+
+          <!-- Notification Dropdown -->
+          <div id="notif-panel" class="dropdown-panel">
+            <div class="dropdown-header">
+              <span>Notifikasi Kampus</span>
+              <button id="mark-all-read" class="link-btn" style="font-size:11.5px;">Tandai dibaca</button>
+            </div>
+            <div id="notif-list"></div>
+          </div>
+
+          <!-- Profile Role Switcher Dropdown -->
+          <div id="profile-panel" class="dropdown-panel" style="width:230px;">
+            <div class="dropdown-header">
+              <span>Ganti Peran Demo</span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <button class="notif-item role-switch-opt" data-role="Mahasiswa" style="border:none;background:transparent;text-align:left;width:100%;">Mahasiswa UBL</button>
+              <button class="notif-item role-switch-opt" data-role="Dosen / Staf" style="border:none;background:transparent;text-align:left;width:100%;">Dosen / Staf UBL</button>
+              <button class="notif-item role-switch-opt" data-role="Admin Green Campus" style="border:none;background:transparent;text-align:left;width:100%;">Admin Green Campus</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Top Horizontal Tab Bar (Mobile & Tablet Quick Navigation) -->
+      <nav id="top-tab-bar" class="top-tab-bar" aria-label="Navigasi Tab Cepat">
+        <button class="top-tab-pill active" data-page="dashboard">Dashboard</button>
+        <button class="top-tab-pill" data-page="lapor">Lapor E-Waste</button>
+        <button class="top-tab-pill" data-page="klasifikasi">Klasifikasi AI</button>
+        <button class="top-tab-pill" data-page="penjemputan">Penjemputan</button>
+        <button class="top-tab-pill" data-page="pelacakan">Pelacakan</button>
+        <button class="top-tab-pill" data-page="analitik">Analitik</button>
+        <button class="top-tab-pill" data-page="pengaturan">Pengaturan</button>
+      </nav>
+
+      <!-- Dynamic Page Container -->
+      <main id="page-content" class="page-content"></main>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Tab Bar -->
+  <nav id="mobile-tab-bar" class="mobile-tab-bar" aria-label="Tab Bar Mobile">
+    <button class="bottom-tab-item active" data-page="dashboard">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5L12 3l9 7.5"/><path d="M5 10v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V10"/><path d="M9 21v-6h6v6"/></svg>
+      <span>Beranda</span>
+    </button>
+    <button class="bottom-tab-item" data-page="lapor">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+      <span>Lapor</span>
+    </button>
+    <button class="bottom-tab-item bottom-tab-ai" data-page="klasifikasi">
+      <span class="bottom-tab-ai-pill">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></svg>
+      </span>
+      <span>AI Scan</span>
+    </button>
+    <button class="bottom-tab-item" data-page="pelacakan">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Lacak</span>
+    </button>
+    <button class="bottom-tab-item" id="bottom-more-btn" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/></svg>
+      <span>Lainnya</span>
+    </button>
+  </nav>
+
+  <!-- Mobile More Sheet -->
+  <div id="mobile-more-backdrop" class="mobile-sheet-backdrop"></div>
+  <div id="mobile-more-sheet" class="mobile-more-sheet" aria-hidden="true">
+    <div class="sheet-handle"></div>
+    <div class="sheet-title">Menu Green Campus UBL</div>
+    <div class="sheet-grid">
+      <button class="sheet-tab-item" data-page="penjemputan">
+        <span class="sheet-icon" style="background:#e7f5ec;color:#15803d;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </span>
+        <span>Penjemputan</span>
+      </button>
+      <button class="sheet-tab-item" data-page="analitik">
+        <span class="sheet-icon" style="background:#e8f1fc;color:#1d4ed8;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </span>
+        <span>Analitik</span>
+      </button>
+      <button class="sheet-tab-item" data-page="pengaturan">
+        <span class="sheet-icon" style="background:#efeafd;color:#6d28d9;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        </span>
+        <span>Pengaturan</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Core Store & App -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- Components (7 Modul Sesuai Permintaan) -->
+  <script src="components/dashboard.js"></script>
+  <script src="components/lapor.js"></script>
+  <script src="components/klasifikasi.js"></script>
+  <script src="components/penjemputan.js"></script>
+  <script src="components/pelacakan.js"></script>
+  <script src="components/dashboard%20analitic.js"></script>
+  <script src="components/pengaturan.js"></script>
+</body>
+</html>
+

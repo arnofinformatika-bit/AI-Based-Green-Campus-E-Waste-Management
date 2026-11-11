@@ -1,0 +1,11 @@
+{
+  "name": "ubl-green-campus-ewaste",
+  "version": "1.0.0",
+  "description": "AI-Based Green Campus E-Waste Management — Universitas Bandar Lampung",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}
+
